@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="open_mi_pay"
+        android:enabled="true"
+        android:icon="@drawable/title_mi_pay"
+        android:shortcutShortLabel="@string/app_name_set"
+        android:shortcutLongLabel="@string/app_name_set"
+        android:shortcutDisabledMessage="@string/app_name_set"
+        tools:targetApi="n_mr1">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="net.gddhy.mipay"
+            android:targetClass="net.gddhy.mipay.MiPaySetActivity" />
+        <!--android.shortcut.conversation   描述当前的intent的执行环境 目前google官方提供的只有这个-->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+</shortcuts>
